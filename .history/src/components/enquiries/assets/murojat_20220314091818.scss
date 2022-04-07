@@ -1,0 +1,284 @@
+.murojat{
+    padding: 70px 0;
+    .form{
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: -120px;
+        padding: 40px 40px 35px 40px;
+        border-radius: 8px;
+        @media (max-width: 618px) {
+            padding: 30px 20px 25px 20px;
+        font-size:16px !important;
+    width:100% !important; }
+        .label-icon{
+            color: #133165 !important;
+            position: absolute;
+            top: 3px;
+            left: 240px;
+            font-size: 17px;
+           
+            }
+        form{
+            height: 100%;
+        }
+        .form-group{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 15px;
+                
+                @media (max-width: 618px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    row-gap: 0;
+                }
+                input{
+                    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; border-color: #133165 !important;
+                }
+               #birthDate{
+                   padding: 10px 13px !important;
+               }
+                .group{
+                    font-size: 13px;
+                }
+        }
+        .image_uploader-btn{
+            background-color: #133165 !important;
+            
+        }
+        select{
+            padding: 13px 20px 13px 13px;
+            width: 100%;
+            outline: none;
+            border: 1px solid rgb(226, 223, 223);
+            margin-bottom: 35px;
+            border-radius: 10px;
+            background-color: #fff;
+            -webkit-appearance: none;
+            // -webkit-appearance: ;  
+            
+            
+        }
+     
+      
+        
+        textarea{
+            display: block;
+            max-width: 1200px;
+            min-width: 200px;
+            width: 100%;
+            height: 210px;
+            border: 1px solid rgb(226, 223, 223);
+            outline: none;
+            padding: 15px;
+            border-radius: 10px;
+            
+        }
+        .submit{
+            margin-top: 10px;
+            padding: 13px 19px;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            background-color: #133165;
+            color: #fff;
+            cursor: pointer;
+            font-size: 15px;
+            float: right;
+        }
+        .crl{
+            clear: both;
+        }
+        .group{
+            font-size: 13px !important;
+        }
+        .field-description{
+            font-size: 17px !important;
+        }
+        .classname{
+            background-color: #133165;
+        }
+        #passport{
+            font-size: 10px;
+            background-color: #133165;
+        }
+        
+       
+    }
+}
+.dateInput:focus{border-color:#133165 !important}
+.ot{margin-top:20px; text-transform: uppercase !important;}
+#em{text-transform: lowercase !important;}
+.error{
+    color: #ff4d4f;
+    font-size: 14px !important;
+    position: absolute;
+    top:52px;
+    left:3px;
+  
+    
+}
+.error3{
+    color: #ff4d4f;
+    font-size: 14px !important;
+    position: absolute;
+    top:80px;
+    left:39px;
+  
+    
+}
+.error1{
+    color: #ff4d4f;
+    font-size: 14px;
+    position: absolute;
+    bottom:-37px;
+    left:70px !important;
+    
+}
+.error2{
+    color: #ff4d4f;
+    font-size: 14px;
+    margin-left: 32px;
+    flex: 100%;
+}
+.ant-form-item{padding-top:30px !important; font-size:16px !important; }
+.salom .in input{box-shadow: 0px 0px 2px #ff4d4f !important; border-color:#ff4d4f !important; font-size:16px !important; }
+.salom .in1{box-shadow: 0px 0px 2px #ff4d4f !important; border-color:#ff4d4f !important; font-size:16px !important; }
+.salom .image_uploader-name{box-shadow: 0px 0px 2px #ff4d4f !important; border-color:#ff4d4f !important; font-size:16px !important; }
+.salom .ant-select-selector{box-shadow: 0px 0px 2px #ff4d4f !important; border-color:#ff4d4f !important; font-size:16px !important; }
+.salom .in textarea{box-shadow: 0px 0px 2px #ff4d4f !important; border-color:#ff4d4f !important; font-size:16px !important; }
+.form label::after{color:white; font-size:16px !important; }
+.form label::before{display: none !important;font-size:16px !important; }
+.ot::placeholder { text-transform: capitalize !important;font-size:16px !important; }
+
+input, .ant-select-selector, .ant-picker{height: 50px !important; display: flex; align-items: center; border-radius: 13px !important;font-size:16px !important; }
+#phone{border-radius: 0px 13px 13px 0px !important;font-size:16px !important; }
+.in textarea{box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; font-size:16px !important; }
+.nest-message_birthday{box-shadow: 0px 0px 0px transparent !important;font-size:16px !important; }
+.ant-input-group-addon{background-color: white !important; border-radius: 13px 0px 0px 13px !important; height:34px !important; top:0px !important; color:grey !important;
+    font-size:16px !important; }
+
+.ant-upload{width:100%;font-size:16px !important; }
+
+.what-this-is{display:none !important; font-size:16px !important; }
+.image_uploader{padding-left:2%; width:100% !important;font-size:16px !important; }
+.image_uploader-name{font-size: 16px !important; margin-left: 1%;}
+.group{display: flex; width:100%; padding-left: 30px !important;}
+.g{padding-left:10px !important; padding-right:0px !important}
+.group .dateTool{left:0px !important;}
+.loader{position: fixed; top:0px; left:0px;  width:100vw; height:100vh; z-index: 5678;   background: #123065d0;
+    backdrop-filter: saturate(180%) blur(10px); display:flex; align-items: center; justify-content: center;font-size:16px !important; }
+.loader img{width:100%;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; border-radius:50%;
+     animation-name:logo; animation-duration: 2s;
+    animation-iteration-count: infinite; font-size:16px !important; }
+
+.bef{width:300px; border-radius:50%; padding:2px;font-size:16px !important; }
+.lo{transform: rotate(45deg); position: absolute; background:linear-gradient(rgba(255, 255, 255, 0.192), rgba(255, 255, 255, 0.425),rgba(255, 255, 255, 0.685),rgba(255, 255, 255, 0.425), rgba(255, 255, 255, 0.192)) ; 
+    height:20px; width:200px;font-size:16px !important; }
+.image_uploader-btn{height: 51.14px !important; width:51.14px !important; display: flex !important; align-items: center !important; justify-content: center !important;}
+.image_uploader-btn .icon{position: relative !important; top:5px !important; }
+.myFor
+{
+    position: relative !important;
+font-size:16px !important; }
+
+.myFor::after
+{
+    transition:1s;
+    position: absolute !important;
+    left: 50px !important;
+    top: 20px !important;
+    transition: 1s;
+    display: none;
+    color:transparent;
+    transition: 0.3s;
+    content: attr(data-placeholder) !important;
+    pointer-events: none !important;
+    opacity: 0.6 !important;
+font-size:16px !important; }
+.myFor1
+{
+    position: relative !important;
+font-size:16px !important; }
+
+.myFor1::after
+{
+    transition:1s;
+    position: absolute !important;
+    left: 0px !important;
+    top: 20px !important;
+    transition: 1s;
+    display: none;
+    color:transparent;
+    transition: 0.3s;
+    content: attr(data-placeholder) !important;
+    pointer-events: none !important;
+    opacity: 0.6 !important;
+font-size:16px !important; }
+.ant-form-item-explain-error{color:#ff4d4f !important; font-size:14px !important; }
+
+.forPlace:after{
+    top: 0px !important; color:#8c8c8c;
+    display:block !important;
+
+font-size:16px !important; }
+.forPlace2:after{
+    top: 0px !important; color:#8c8c8c;
+    display:block !important;
+left:75px !important;
+font-size:16px !important; }
+.forPlace1:after{
+    top: 20px !important; left:50px !important; color:#8c8c8c;
+    display:block !important;
+
+font-size:16px !important; }
+.but{box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important; background-color: #133165 !important; border-radius: 10px !important; 
+    width:200px !important; text-align: center !important;
+
+    height:50px !important; display: flex; align-items: center; justify-content: center; font-size: 20px !important;}
+    .but:active{box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;}
+    .but1{box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important; background-color: #133165 !important; border-radius: 10px !important; 
+        width:200px !important; text-align: center !important;
+        right:25% !important; 
+        height:50px !important; display: flex; align-items: center; justify-content: center; font-size: 20px !important;}
+        .but1:active{box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;}
+    .dateInput{border: 1px solid #d9d9d9 ; width:92% !important;margin-left: 5%; color:#bfbfc1 !important; padding:1px 10px !important; font-size:16px !important; outline:none;}
+  .dateInput::placeholder{font-size: 16px !important; }
+
+  .forPlace .dateInput{color:black !important; font-size: 16px !important;}
+  .datFor{display:flex; width:100% !important; padding-top:30px; margin-bottom:24px}
+    .dateTool{width:17px; color:white; display: flex; align-items: center; justify-content: center; height:17px; margin-top: 8px; position: relative; left:2%}
+    .butCol{
+        display: flex !important; padding:0px 30px !important;  justify-content:flex-end !important;
+    }
+    .myFor1 .dateTool{position: relative; top:30px; left:10px !important}
+@media (max-width:800px){
+    .ant-row{width: 300px !important; padding-right:0px !important; margin-right: 0px !important;}
+    .forPlace:after{top:35px !important; left:40px !important;}
+    .forPlace1:after{top:35px !important; left:40px !important;}
+    textarea{width:92% !important; position: relative !important; left:-15px !important }
+
+.image_uploader{padding-left:0px !important;}
+.datFor{flex-direction:column !important; padding:0px !important;}
+.group{flex-direction:column !important; padding-left:20px !important; padding-right:30px !important;}
+.g{padding-left:5px !important;padding-right:0px !important;}
+.group .dateTool{margin-bottom:10px; margin-left:5px !important; }
+.dateInput{border: 1px solid #d9d9d9 ; width:calc(100% + 40px) !important; color:#bfbfc1 !important; margin-left: 0px !important; margin-top: 10px !important; padding:1px 10px !important; font-size:16px !important; outline:none;}
+.dateInput::placeholder{font-size: 16px !important; }
+.forPlace1:after{top:20px !important}
+.forPlace .dateInput{color:black !important; font-size: 16px !important;}
+.form-group1{width:calc(100% + 45px) !important; margin-left:-5px !important}
+.butCol{padding-left:20% !important}
+.error2{margin-left:0px !important}
+.form{padding:30px 0px !important}
+.f::after{top:5px !important}
+.forPlace2:after{top:35px !important; left:65px !important}
+.myFor1 .dateTool{position: relative; top:-15px; left:5px !important}
+}
+textarea{width:104.5% !important; margin-left:4.5% !important; font-size: 16px;}
+.anticon-question{padding:1px !important; font-size: 13px !important; display:inline-block; border-radius:4px; border:1px solid #bfbfc1; color:white; background-color:#bfbfc1 !important; }
+.ant-form-item-label > label::after{border-radius: 50px !important;}
+::-webkit-calendar-picker-indicator {
+    filter: invert(0.7);
+}
+.image_uploader .modal{display: none !important;}

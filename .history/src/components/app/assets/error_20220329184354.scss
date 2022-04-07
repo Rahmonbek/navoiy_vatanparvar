@@ -1,0 +1,10 @@
+.error{width:100%; height:90vh; top:0px; position: relative;}
+.error .bk{width: 100%; position: absolute; top:-100px; left:0px;}
+.error .log{position:absolute;left: 10%; top:20px; }
+.error .bk1{display: none;width: 100%; position: absolute; top:-100px; left:0px;}
+@media(max-width:1024px){
+    .error .bk{display: none;}
+    .error .bk1{display: block;top:100px}
+    .error{height: 100vh;}
+}
+@media(max-width:1024px) and (min-width:)

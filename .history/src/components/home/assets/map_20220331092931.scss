@@ -1,0 +1,52 @@
+.map {
+    padding: 0;
+    width: 100vw;
+    position: relative;
+margin-bottom: 40px;
+    overflow: hidden;
+height:
+    &-bg {
+        perspective: 10px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &-svg {
+        position: relative;
+        height: 68vh;
+       WWW path {
+            cursor: pointer;
+            &:hover {
+                fill: #133165;
+       
+                
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+        }
+    }
+    &-modal_content {
+
+      
+        .region_name {
+            font-size: 30px;
+            font-weight: 600;
+            color:#133165
+        }
+        .region_info li {
+            padding: 10px 0;
+            font-size: 16px;
+            display: flex;
+            strong {
+                margin-right: 10px;
+                display: flex;
+                height:100%; 
+                width:30px;
+                align-items: center;
+                
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid #133165;
+            }
+        }
+    }
+}

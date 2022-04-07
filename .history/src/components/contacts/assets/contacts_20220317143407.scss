@@ -1,0 +1,173 @@
+.contacts {
+    z-index: 1;
+    padding: 70px 0;
+    user-select: none;
+
+    a {
+        color: #333333;
+    }
+
+    .swiper-wrapper {
+        // padding: 30px 0;
+    }
+
+    .containerr {
+        max-width: 80%;
+        margin: 0 auto;
+        @media (max-width: 1400px) {
+            max-width: 95%;
+        }
+        @media (max-width: 818px) {
+            max-width: 95%;
+        }
+    }
+
+    .swiper {
+        padding: 0 54px;
+        // background-color: rgb(243, 243, 243);
+        // background-color: ;
+        // border-bottom: 2px solid #133165;
+        .swiper-button-next {
+            top: 30px;
+
+            &::after {
+                width: 10px;
+                font-size: 30px;
+                color: #133165;
+                font-weight: bold;
+            }
+        }
+
+        .swiper-button-prev {
+            top: 30px;
+
+            &::after {
+                width: 10px;
+                font-size: 30px;
+                color: #133165;
+            }
+        }
+    }
+
+    .slider-item_img {
+        // padding: 10px 0;
+        height: 50px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        -webkit-user-drag: none;
+        
+        background-color:white; 
+     
+        cursor: pointer;
+       
+
+        p {
+            color: #a2a0a0;
+            font-size: 20px;
+     
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            background-color: #e0f2fd;
+            p{
+            color: #133165;
+            }
+        }
+    }
+
+    .active {
+        background-color: #e0f2fd;
+  
+        p{
+            color: #133165;
+            }
+    }
+
+    .swiper-slide_body {
+        text-align: center;
+        // padding: 20px;
+        z-index: 2534;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        background-color:white;
+       
+        border-radius: 10px;
+    }
+
+    .content {
+        @media (max-width:900px){
+width:95vw !important;
+        }
+        table, th, td{border-left:1px solid white; border-collapse:collapse;}
+
+        .content-table {
+            width: 100%;
+            padding: 15px 25px;
+            font-size: 0.9em;
+            border-radius: 5px 5px 0 0;
+           
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+
+            thead tr {
+                text-align: left;
+                font-weight: bold;
+            }
+
+            th,
+            td {
+                padding: 7px 15px;
+                font-size: 16px;
+            }
+
+            th {
+                text-align: center;
+                height:70px;
+                font-size:18px;
+            }
+        }
+    }
+}
+.slide1{z-index: 1232 !important; background-color: white;}
+.table1{position:sticky; top:100px; z-index: 32 !important; height: 65px !important; background-color:white}
+// @media (max)/
+@media (max-width:768px){
+    .slider-item_img p{font-size:18px !important;}
+    .headName{margin-top: -15px !important;}
+    .swiper-wrapper{background-color: white;}
+   
+}
+  
+// .Active{background-color: #e0f2fd !important;}
+.panel{background-color: white; border-bottom: 3px solid transparent;}
+.panel .ant-collapse-header{height:50px !important}
+
+.panel:hover{background-color: #e0f2fd;
+    // border-bottom: 3px solid #133165 !important;
+}
+.tel{display: none;}
+@media (max-width:1024px){
+    .komp{display: none;}
+    .tel{display: block;}
+    
+}
+.sal{margin-top: 40px;}
+.headId{width:10%; z-index: -1;}
+.headName{width:90%; text-align: justify;  z-index: -1;}
+.colAcc{padding:5px; font-size: 16px;}
+.contacts .ant-collapse-arrow{position: relative; top:5px;}
+.contacts .ant-row{width:100% !important}
+.Active{background-color: #e0f2fd;}
+.Active .ant-collapse-content{background-color: #e0f2fd;}
+.salomText{position: relative; top:-5px; left:10px}
+.komp h1{color: #133165; text-align: center; padding-top: 10px;}
+
+@media (max-width:1424px){
+    .panel .ant-collapse-header{height: 68px !important; padding-top: 20px !important;}
+    .contacts .slider-item_img{height: 68px !important; padding-top: 20px;}
+}
+.komp h1{    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color:white;
+   height:78px;
+   color:#133165;
+   
+    border-radius: 10px 10px 0px 0px;}
