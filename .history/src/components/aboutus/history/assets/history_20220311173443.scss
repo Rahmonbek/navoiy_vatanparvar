@@ -1,0 +1,70 @@
+.history {
+  padding: 70px 0;
+  .containerr {
+    width: 70%;
+    margin: 0 auto;
+    height: 100% !important;
+    @media (max-width: 1200px) {
+      width: 100%;
+      p {
+        font-size: 16px;
+      }
+    }
+    .history-slider {
+      .swiper {
+        width: 100%;
+        height: 100%;
+        &-slide {
+          text-align: center;
+          background: #fff;
+          height: 600px !important;
+          display: flex;
+          justify-content: center;
+          @media (max-width: 768px) {
+            height: 500px;
+          }
+          &_body {
+            flex: 1 1;
+          }
+
+          &_content {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            padding: 0 30px;
+            position: relative;
+            &_title {
+              position: absolute;
+              top: 68%;
+              font-size: 30px;
+              color: #ffffff;
+              max-width: 1000px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      width: 100%;
+      p {
+        font-size: 14px;
+      }
+    }
+    .section-two{
+      p{
+        padding-top: 20px;
+        text-align: justify;
+        font-size: 20px;
+      }
+    }
+  }
+}
+.hisRah{height: 500px; transition: 0.3s; background-size: 100% 100%; position: relative; margin-bottom: 20px;  background-position: center center; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+.hisBlack{background-color: rgba(0, 0, 0, 0.474);transition: 0.3s;padding: 5px; color:#3498db; position: absolute; bottom:0px; width:100%;height:120px; border-radius: 5px; font-family: "Roboto";}
+.hisBlack h2{color:white; font-weight: 500; font-size: 19.5px;  margin-top: -10px !important; }
+.kasb{font-size: 20px; margin-top: -20px;}
+.hisRah:hover{background-size: 115% 115%;}
+.yil{font-size: 18px; margin-top: -30px;}
+.hisRah:hover .hisBlack{background-color: rgba(0, 0, 0, 0.741);}

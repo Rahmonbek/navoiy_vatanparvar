@@ -1,0 +1,9 @@
+export const url="https://jizzax.vatanparvar.uz/Files/News"
+export const urlV="https://vatanparvar.uz/Files/News"
+export const api="https://jizzax.vatanparvar.uz/"
+export const urlFoto="https://jizzax.vatanparvar.uz/Files/Photogallery"
+export const urlStat="https://jizzax.vatanparvar.uz/Files/StatisticElements"
+export const urlPer="https://jizzax.vatanparvar.uz/Files/Personal"
+export const region=4
+export const regionI=1708
+export const urlImg="https://kadr.vatanparvar.uz/img/personal/"

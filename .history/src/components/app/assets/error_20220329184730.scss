@@ -1,0 +1,14 @@
+.error{width:100%; height:100vh; top:0px; position: relative;}
+.error .bk{width: 100%; position: absolute; top:0px; left:0px;}
+.error .log{position:absolute;width:240px; left: 10%; top:20px; }
+.error .bk1{display: none;width: 100%; position: absolute; top:-100px; left:0px;}
+@media(max-width:1024px){
+    .error .bk{display: none;}
+    .error .bk1{display: block;top:100px}
+    .error{height: 100vh;}
+}
+@media(max-width:1024px) and (min-width:768px){
+    .error .bk1{top:-100px}
+    .error .log{left:30%}
+}
+@media(min-width:1600px){.error .log}

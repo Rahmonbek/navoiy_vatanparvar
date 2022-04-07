@@ -1,0 +1,174 @@
+.rahbariyat{
+    .web{
+        display: flex;
+        .icon{
+            margin-right: 10px !important;
+            @media (max-width: 549px){
+                width: 25px;
+            }
+        }
+        @media (max-width: 549px){
+            width: 100%;
+            p{
+              font-size: 15px !important;
+              padding: 3px 0;
+            }
+        }
+    }
+    padding: 70px 0;
+    a{
+        color: #333;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+            color: #244BA4;
+        }
+    }
+    .icons{
+        display: flex;
+        padding:0px;
+        height:50px !important;
+        .icon{
+            margin-right: 10px !important;
+            @media (max-width: 549px){
+                width: 25px;
+            }
+        }
+    }
+    &-info{
+        width: 65%;
+        margin: 0 auto;
+        @media (max-width: 1539px){
+            width: 80%;           
+        }
+        @media (max-width: 1168px){
+           width: 50%;
+        }
+        @media (max-width: 800px){
+            width: 90%;
+        }
+        @media (max-width: 549px){
+            width: 100%;
+            .rahbariyat-list-text{
+                width: 100% !important;
+                p{
+                    font-size: 20px !important;
+                    padding: 5px 0 5px 0;
+                }
+                
+            }
+            .rahbariyat-list-text-position{
+                font-size: 25px !important;
+            }
+
+        }
+    }
+    &-list{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 100%;
+        border-radius: 5px;
+        margin: 35px 0;
+    //    max-width:1000px !important;
+        transition: 0.4s;
+        &-img{
+            width:50% !important;
+            .img{width:100% !important;}
+        }
+        .content-wrapper{ 
+            display: flex;
+            // height: 360px;
+            @media (max-width: 1168px){
+               display: block;
+               .img{
+                width: 100% !important;
+                height: 300px !important;
+            }
+            .img1{
+                width: 100% !important;
+                height: 300px !important;
+            }
+            .rahbariyat-list-text{
+                width: 100%;
+               
+            }
+            
+            }
+            .rahbariyat-list-text-position{
+                margin-top: 8px;
+            }
+        }
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+          }
+       
+        &-text{
+            width: 50%;
+            padding: 20px 20px 0px 30px;
+            @media (max-width: 800px){
+                padding: 20px 20px 0px 20px;
+                
+            }
+        }
+        p{
+            font-size: 20px ;    
+            padding-bottom: 10px;  
+            padding-top: 5px;
+         
+            font-family: "Roboto Condensed", sans-serif;  
+            // display: block;  
+        }
+        .img{
+            width: 100% !important;
+                  height: 333px !important;
+                  object-fit: cover;
+                  transition: 0.3s;
+                  border-radius: 5px;
+        }
+        
+        .img1{
+            width: 100% !important;
+                  height: 345px !important;
+                  object-fit: cover;
+                  transition: 0.3s;
+                  border-radius: 5px;
+        }
+        
+        &-text-position{
+            font-size: 25px!important;
+            padding-top: 0 !important;
+         
+                font-weight: bold !important;
+         
+        }
+        &-text-name{
+            color: #244BA4;
+            font-size: 21px !important;
+            padding-top: 0 !important;
+            
+        }
+    }
+}
+.web button{padding:5px 30px; color:white; transition: 1s; background-color: #244BA4; border;}
+.rahbariyat-list-text-position{font-weight: 700 !important; line-height: 20px; font-weight: bold !important;  }
+.rahbariyat-list-text-name{margin-top: -20px !important; height: 58px !important; line-height: 24px; font-size: 25px !important;}
+.sub .rahbariyat-list-text-name{margin-top: -15px;}
+.sub .rahbariyat-list-text-position{margin-top: -20px; }
+.sub .icons{margin-top: -20px;}
+.sub .web{margin-top: -20px; height:50px !important}
+.reg .icons{margin-top: -10px;}
+.reg .web{margin-top: -10px; height:50px !important}
+.tel{display:none}
+.komp{display: block;}
+.icon{font-size:25px !important; position: relative; top:5px !important;}
+.rahbariyat-list-text-position{font-weight: 500 !important; font-size: 23px !important; text-transform: uppercase;}
+@media(max-width:768px){
+    .img{height:300px !important; width:auto !important}
+    .img1{height:300px !important; width:auto !important}
+    .sub .img{left:20%;}
+    .content-wrapper{display:flex !important; flex-direction:column !important; justify-content: center !important;}
+    .rahbariyat-list-text-position{letter-spacing: 0.5px;}
+    
+}
+@media(min-width:769px) and (max-width:1168px){
+    .content-wrapper{display:flex !important; flex-direction:column !important; justify-content: center !important;}
+}

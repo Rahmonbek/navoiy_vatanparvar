@@ -1,0 +1,15 @@
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  #logo_header{
+    color: red;
+  }
+  img {
+    border: 1px solid #f4f4f4;
+    cursor: pointer;
+    -webkit-user-drag: none;
+  }
+ 
+}

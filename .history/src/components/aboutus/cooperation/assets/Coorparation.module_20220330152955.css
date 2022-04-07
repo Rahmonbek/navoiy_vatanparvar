@@ -1,0 +1,36 @@
+.card{cursor:pointer; border-radius: 10px; top:0px; width:100%;transition: 0.3s;border: 1px solid transparent; position: relative; display:flex; align-items: center; flex-direction: column; height: 200px; margin-bottom: 20px; background-color:white;}
+.card img{width:calc(100% + 8px);border: 5px solid #153265;transition: 0.3s; height: calc(100% + 8px); position: relative; top:-4px; left:-4px; border-radius: 50%; }
+.card ul{z-index: 3333 !important;}
+.img{width:120px;background-color: white; height:120px; transition: 0.3s; position: absolute; top:calc(50% - 60px); left:calc(-60px);  border-radius: 50%;padding: 5px; border: 2px solid white; }
+.blue{width:0px;  z-index: 0; height:0px;transition: 0.3s; position: absolute; top:50%;  left:0; border-radius: 50%;   background-color: white;}
+.card h1{margin-top: 20px; padding-left:65px !important; font-weight:600; padding-right: 20px; text-align: center; text-transform: uppercase; font-size: 20px; transition: 0.3s;color:#153265;}
+.card:hover .blue{top:0px;  background-color: #153265;border-radius: 30px;  width:calc(100%); height:calc(100%);}
+.card:hover .img{border-color:white; border-width: 2px;  background-color: white;}
+.card:hover h1{color:white; z-index: 345 !important;}
+.card:hover img{border-color: #153265;}
+.card ul li{padding-left: 50px; z-index: 3334 !important; transition: 0.3s; text-align: left; color: #153265 !important; font-size:16px !important;}
+.card:hover ul li{color:white !important;}
+.card1{height:430px; overflow: hidden; transition: 0.5s; position: relative; border-radius: 5px;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;}
+.card1 .img1 img{width:100%; height:180px; border-radius:5px 5px 0px 0px; position: static;}
+.card1 ul{margin-top: -10px;}
+.card1 .img1{position: relative;}
+.card1::after{content: ""; transition: 0.5s; position: absolute; top:calc(120px); width:100%;height:60px; background-color: #153265bf; left:0px;}
+.card1:hover:after{ height:180px;top:0px; background-color: rgba(255, 255, 255, 0.392);}
+.card1 li{text-align: center;transition: 0.5s; font-size: 18px; color:#153265}
+.card1 h1{text-align: center;transition: 0.5s; margin-top: 10px; font-weight: 600; font-size: 25px; color:#153265}
+.card1 h1{text-align: center;transition: 0.5s; margin-top: 10px; font-weight: 600; font-size: 25px; color:#153265}
+.narx{position: absolute;top:130px;  width:100%; text-align: center; font-size: 25px !important; z-index: 234; color: white; transition: 0.5s;}
+.card1:hover .narx{ top:90px; color:#153265}
+/* .card1:hover{
+background-color: #153265;
+} */
+.but{display: block;transition: 0.5s; border:2px solid #153265; margin: auto; width:150px; padding:5px; text-align: center; border-radius: 5px; position: absolute; bottom:20px; left:calc(50% - 75px);  background-color: #153265; color:white; font-size: 16px;}
+/* .card1:hover li{color:white}
+.card1:hover h1{color:white} */
+.card1:hover .but{background-color: white; color:#153265; border-color: #153265;}
+.but:hover{background-color: #153265 !important; color:white !important}
+.card1 ul{height:125px; display: flex; justify-content: center; flex-direction: column;}
+.lenta{background-color: red; position: absolute; top:25px; right:-65px; transform: rotate(45deg); font-size: 16px; padding: 2px; color:white; width: 200px; text-align: center; font-weight: bold; z-index: 324;}
+@media(max-width:1024px){
+    .card1 h1{font-size: 23px;}
+}
