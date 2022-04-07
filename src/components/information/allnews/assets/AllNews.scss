@@ -1,0 +1,82 @@
+.all-news {
+    padding:70px 0;
+    &_list {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          row-gap: 25px;
+          column-gap: 15px;
+          width: 100%;     
+          @media (max-width: 1125px) {
+              grid-template-columns: repeat(2, 1fr);   
+          }
+          @media (max-width: 660px) {
+              grid-template-columns: repeat(1, 1fr); 
+              width: 80%;
+              margin: 0 auto;
+          }
+          @media (max-width: 522px) {
+              width: 100%;
+              
+          }
+      &-item {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 5px;
+        max-width: 515px;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.3s;
+        background-color: #fff;
+
+        @media (max-width: 1090px) {
+          width: auto;
+          flex: 1 1;
+          min-width: 300px;
+        }
+        &_content {
+          padding: 20px 20px 0px 20px;
+          height:100px !important;
+          display:flex;
+          align-items: center;
+
+        }
+        &_img {
+          width: 100%;
+          height: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          .img {
+            width: 100% !important;
+            height: 300px !important;
+            object-fit: cover;
+            transition: 0.3s;
+          }
+        }
+        &-link {
+          letter-spacing: 1px;
+          color: #333;
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 600;
+        }
+        &_date {
+          font-weight: 400;
+          margin-top: 20px;
+        }
+        &:hover {
+         
+          .news_list-item-link {
+            color: #133165;
+          }
+        
+        }
+      }
+    }
+  }
+  .img{width:100% !important;}
+  @media(max-width:768px){
+    .img{height:100% !important;}
+  }
+  .news_list-item:hover{transform:scale(1.05, 1.05) !important
+  }
