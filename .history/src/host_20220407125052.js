@@ -5,5 +5,5 @@ export const urlFoto="https://navoiy.vatanparvar.uz/Files/Photogallery"
 export const urlStat="https://navoiy.vatanparvar.uz/Files/StatisticElements"
 export const urlPer="https://navoiy.vatanparvar.uz/Files/Personal"
 export const region=6
-export const regionI=1712
+export const regionI=1706
 export const urlImg="https://kadr.vatanparvar.uz/img/personal/"
