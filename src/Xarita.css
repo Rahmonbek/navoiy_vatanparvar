@@ -87,7 +87,9 @@
 .mapR .nav input:checked ~ span:nth-child(3) {
     transform: translateY(0) rotate(45deg);
 }
-
+@media(max-width:1700px){
+    .mapR .nav1{bottom:30px}
+}
 @media(max-width:800px){
     .mapR .nav input:checked ~ .menu{width:300px;}
     .mapR .menu li{width:250px; font-size:13px;}

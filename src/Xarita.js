@@ -129,8 +129,10 @@ const [region, setRegion] = useState({})
 
   
   useEffect(() => {
+
     if(window.screen.width<1600 && window.screen.width>1025){
-      setzoomA(2)
+      setzoomA(4)
+
             setzoom([[33, 50], [48,80]])
           }
     if(window.screen.width<1024){
@@ -156,7 +158,7 @@ setzoomA(2)
      setRegion(item)
      setShowModalRegion(true)
   }
- 
+ console.log(zoomA)
   return (
     <div className="mapR">
      {loader?<div className="loaderG">
