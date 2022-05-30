@@ -9,7 +9,8 @@ import "./assets/fotogalereriya.scss";
 
 import { useTranslation } from 'react-i18next';
 import http from "../../ui/Services";
-import { region, urlFoto } from "../../../host";
+import { api, region, urlFoto } from "../../../host";
+import axios from "axios";
 function PhotoGallery() {
   const {t, i18n} = useTranslation();
   const [loader, setLoader] = useState(true)
@@ -19,8 +20,8 @@ function PhotoGallery() {
   const [data4, setData4] = useState<any>(null)
  
 
-useEffect(()=>{
-	http.get<any>(`GetApi/GetPhotogalleryImages/?regionId=${region}`).then((res) => {
+  useEffect(()=>{
+	axios.get(`${api}GetApi/GetPhotogalleryImages/?regionId=${region}`).then((res) => {
 		var length=Math.ceil(res.data.length/4)
 		 setData1(res.data.slice(0, length));
 	
@@ -31,7 +32,6 @@ useEffect(()=>{
 	},0); })
 	.catch(e => console.log(e))
 }, [])
-
 
   return (
 	<Image.PreviewGroup>
