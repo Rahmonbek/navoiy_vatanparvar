@@ -111,7 +111,7 @@ if(t('check')){
             
             <Col style={{padding:'10px'}} lg={8}  md={12} sm={24}>
     
-    <Link to={"/allnews/" + item.id}  style={{width:'100%'}} className="news_list-item1" key={index}>
+    <Link to={t('check')?"/allnews/" + item.id:"/allnews/ru/" + item.id}  style={{width:'100%'}} className="news_list-item1" key={index}>
     
     <a className="card" style={{backgroundImage: `url(${item.regionId===null?urlV:url}/${item.titleImage})`}}>
       <div className='blackPar'>
@@ -148,7 +148,7 @@ if(t('check')){
             
     <Col style={{padding:'10px'}} lg={8} md={12} sm={24}>
     
-    <Link to={"/allnews/" + item.id} className="news_list-item1" key={index}>
+    <Link to={t('check')?"/allnews/" + item.id:"/allnews/ru/" + item.id} className="news_list-item1" key={index}>
     
     <a className="card" style={{backgroundImage: `url(${item.regionId===null?urlV:url}/${item.titleImage})`}}>
       <div className='blackPar'>

@@ -28,7 +28,7 @@ function OpenNews() {
     const [idT, setidT] = useState<any>(id)
     const [elem, setelem] = useCookies([`${id}`])
     const editUrl=()=>{
-        window.localStorage.href=api+"/allnews"
+        window.localStorage.href=api+t('check')?"/allnews/":"/allnews/ru/"
     }
   
     //    @ts-ignore
@@ -122,7 +122,7 @@ f.push(b[i])
         <div className="open-news" style={{padding:'50px 18%'}}>
             {
             error?<Navigate to="/error" />:
-            t('check') && data.titleUz===null || !t('check') && data.titleRu===null?<Navigate to="/allnews"/>:<div className="container" >
+            t('check') && data.titleUz===null || !t('check') && data.titleRu===null?<Navigate to={t('check')?"/allnews/":"/allnews/ru/"}/>:<div className="container" >
                 <Row >
 <Col lg={17} md={24} sm={24}>
 
@@ -289,3 +289,4 @@ f.push(b[i])
 }
 
 export default OpenNews;
+

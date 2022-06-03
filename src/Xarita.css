@@ -4,7 +4,7 @@
     align-items: center;
 }
 .mapR .nav1{
-    position: fixed; bottom:200px; left:0px;
+    position: absolute; bottom:200px; left:0px;
 }
 .mapR .nav {
     position: relative;
@@ -88,12 +88,33 @@
     transform: translateY(0) rotate(45deg);
 }
 @media(max-width:1700px){
-    .mapR .nav1{bottom:30px}
+    .mapR .nav1{top:450px !important; left:5px;}
+    .mapR .nav input:checked ~ .menu{width:400px;}
+    .mapR .menu li{width:300px; font-size:13px;}
+    .mapR .nav span{width: 20px;  left:5px; height:2px}
+    .mapR .nav{padding: 10px;}
+    .mapR .nav1{bottom:80px}
 }
 @media(max-width:800px){
     .mapR .nav input:checked ~ .menu{width:300px;}
     .mapR .menu li{width:250px; font-size:13px;}
     .mapR .nav span{width: 20px;  left:5px; height:2px}
     .mapR .nav{padding: 10px;}
-    .mapR .nav1{bottom:80px}
+    .mapR .nav1{bottom:80px !important; left:0px;}
+}
+
+.modal{top:40px !important;}
+@media(max-width:1700px){
+.modal{top:50px !important;}
+
+    .mapR .modal{top:140px !important;}
+    
+}
+@media(max-width:800px){
+    .modal{top:40px !important; height: 600px !important; padding:0px}
+    .modal_content{padding:20px;}
+    .modal_content h2{font-size:20px}
+    .modal_content li{font-size:15px !important; }
+.map .container{height:500px !important; padding-top: 100px !important;}
+.partners{padding-top: 10px;}
 }

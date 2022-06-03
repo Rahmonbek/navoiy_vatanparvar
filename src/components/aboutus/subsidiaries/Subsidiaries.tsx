@@ -82,7 +82,7 @@ function Leaders() {
                 </div>
                
                 <div className="web1">
-<Link className="butS" to={`/tashkilot/${item.branchId}`}>{t("FILIAL HAQIDA")} <AiOutlineRight style={{position:'relative', top:"3px"}} size="1.2rem"/></Link>
+<Link className="butS" to={t("check")?`/tashkilot/${item.branchId}`:`/tashkilot/ru/${item.branchId}`}>{t("FILIAL HAQIDA")} <AiOutlineRight style={{position:'relative', top:"3px"}} size="1.2rem"/></Link>
               </div>
               </div>
               </div> 

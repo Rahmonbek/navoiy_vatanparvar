@@ -18,7 +18,7 @@ i18n
     .use(initReactI18next)
 init({
     resources,
-    lng: 'uz',
+    lng: window.location.href.split('/')[window.location.href.split('/').length-1]==="ru" || window.location.href.split('/')[window.location.href.split('/').length-2]==="ru"?"ru":'uz',
     keySeparator: false,
     detection: {
         order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],

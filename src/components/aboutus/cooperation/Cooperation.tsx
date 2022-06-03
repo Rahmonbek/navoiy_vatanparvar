@@ -214,7 +214,7 @@ return( <li>{t("check")?item1.nameUz!==null?item1.nameUz:item1.nameRu:item1.name
      }):''}
    
    </ul>
-   <Link to="/onlayn-murojat" className={style.but}>Ariza yuborish</Link>
+   <Link to={t("check")?"/onlayn-murojat":"/onlayn-murojat/ru"} className={style.but}>Ariza yuborish</Link>
      </div>
    </div>)
    })}
@@ -253,7 +253,7 @@ return( <li>{t("check")?item1.nameUz!==null?item1.nameUz:item1.nameRu:item1.name
    <h1>{t("check")?item.nameUz!==null?item.nameUz:item.nameRu:item.nameRu!==null?item.nameRu:item.nameUz}</h1>
    <h3>3 oy</h3>
    
-   <Link to="/haydovchilik-maktabiga-yozilish" className={style.but}>Ariza yuborish</Link>
+   <Link to={t("check")?"/haydovchilik-maktabiga-yozilish":"/haydovchilik-maktabiga-yozilish/ru"} className={style.but}>Ariza yuborish</Link>
      </div>
    </div>)
    })}
@@ -293,7 +293,7 @@ itemClass="carousel-item-padding-40-px"
 <h1>{t("check")?item.nameUz!==null?item.nameUz:item.nameRu:item.nameRu!==null?item.nameRu:item.nameUz}</h1>
 <h3>3 oy</h3>
 
-<Link to="/kasb-hunar-maktabiga-yozilish" className={style.but}>Ariza yuborish</Link>
+<Link to={t("check")?"/kasb-hunar-maktabiga-yozilish":"/kasb-hunar-maktabiga-yozilish/ru"} className={style.but}>Ariza yuborish</Link>
   </div>
 </div>)
 })}

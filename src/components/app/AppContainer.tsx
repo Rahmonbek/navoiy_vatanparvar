@@ -40,7 +40,7 @@ export function AppContainer() {
             <main className="main"> <Routes>
             <Route path='*' element={<Error />} />
   
-                <Route path="/allnews/:id" element={<OpenNews />} />
+            <Route path="/allnews/:id" element={<OpenNews />} />
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/markaziy-kengash" element={<Central />} />
                 <Route path="/rahbariyat" element={<Leaders />} />
@@ -63,7 +63,31 @@ export function AppContainer() {
                 <Route path="/yoshlar-va-fuqarolarni-mudofaa" element={<FourthPage />} />
                 <Route path="/avtomototransport-vositalari-haydovchilarini" element={<Fifthpage />} />
                 <Route path="/xalqaro-tashkilotlar-bilan-faol-hamkorlik-qilish" element={<SixPage />} />
-                <Route path="/xarita" element={<Xarita />} />
+                <Route path="/xarita/:id" element={<Xarita />} />
+                <Route path="/allnews/ru/:id" element={<OpenNews />} />
+                <Route path="/ru" element={<Home />}></Route>
+                <Route path="/markaziy-kengash/ru" element={<Central />} />
+                <Route path="/rahbariyat/ru" element={<Leaders />} />
+                <Route path="/markaziy-aparat/ru" element={<Aparat />} />
+                <Route path="/filiallar/ru" element={<Subsidiaries />} />
+                {/* <Route path="/hududiy-kengashlar" element={<Regions />} /> */}
+                {/* <Route path="/tashkilot-tarixi" element={<History />} /> */}
+                <Route path="/tashkilot/ru/:id" element={<Cooperation />} />
+                <Route path="/error/ru" element={<Error />} />
+                <Route path="/allnews/ru" element={<AllNews />} />
+                <Route path="/fotogalareya/ru" element={<PhotoGallery />} />
+                <Route path="/hujjatlar/ru" element={<Documents />} />
+                <Route path="/kontaktlar/ru" element={<Contacts />} />
+                <Route path="/onlayn-murojat/ru" element={<OnlineEnquiries />} />
+                <Route path="/haydovchilik-maktabiga-yozilish/ru" element={<ToDrivingSchool />} />
+                <Route path="/kasb-hunar-maktabiga-yozilish/ru" element={<Kasbxunar />} />
+                <Route path="/yoshlar-va-fuqarolarni-manaviy-axloqiy/ru" element={<FirstPage />} />
+                <Route path="/sportning-texnik-va-amaliy-turlarini/ru" element={<SecondPage />} />
+                <Route path="/bolalar-osmirlar-va-chaqiruvgacha/ru" element={<ThirdPage />} />
+                <Route path="/yoshlar-va-fuqarolarni-mudofaa/ru" element={<FourthPage />} />
+                <Route path="/avtomototransport-vositalari-haydovchilarini/ru" element={<Fifthpage />} />
+                <Route path="/xalqaro-tashkilotlar-bilan-faol-hamkorlik-qilish/ru" element={<SixPage />} />
+                <Route path="/xarita/ru/:id" element={<Xarita />} />
             </Routes></main>
             <AppFooter />
         </div>
