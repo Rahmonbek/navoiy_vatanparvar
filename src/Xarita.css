@@ -34,7 +34,7 @@
 
 .mapR .menu li {
     list-style: none;
-    margin: 10px 10px;
+    margin: 4px 10px;
     text-decoration: none;
     color: #666;
     width:400px;
@@ -89,15 +89,15 @@
 }
 @media(max-width:1700px){
     .mapR .nav1{top:450px !important; left:5px;}
-    .mapR .nav input:checked ~ .menu{width:400px;}
-    .mapR .menu li{width:300px; font-size:13px;}
+    .mapR .nav input:checked ~ .menu{width:450px;}
+    .mapR .menu li{width:350px; font-size:12px;}
     .mapR .nav span{width: 20px;  left:5px; height:2px}
     .mapR .nav{padding: 10px;}
     .mapR .nav1{bottom:80px}
 }
 @media(max-width:800px){
-    .mapR .nav input:checked ~ .menu{width:300px;}
-    .mapR .menu li{width:250px; font-size:13px;}
+    .mapR .nav input:checked ~ .menu{width:350px;}
+    .mapR .menu li{width:320px; font-size:12px;}
     .mapR .nav span{width: 20px;  left:5px; height:2px}
     .mapR .nav{padding: 10px;}
     .mapR .nav1{bottom:80px !important; left:0px;}

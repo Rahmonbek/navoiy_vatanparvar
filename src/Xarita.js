@@ -14,7 +14,6 @@ import {
   RulerControl,
 } from "react-yandex-maps";
 import "./Xarita.css"
-import {region} from './host' 
 import person from "./boy.png";
 import { Modal } from "./components/ui/Modal";
 import {HiOutlineLocationMarker, 
@@ -26,6 +25,7 @@ import {HiOutlineLocationMarker,
 
     import { MdAlternateEmail,} from 'react-icons/md'
 
+    
 import http from "./components/ui/Services";
 import { useTranslation } from 'react-i18next';
 
@@ -46,9 +46,30 @@ export const Xarita=()=> {
   const [zoomA, setzoomA] = useState(7);
   const [school, setSchool] = useState([]);
   const [user, setUser] = useState([]);
-;
+const [markaz, setMarkaz] = useState({
+code: "UZB4828",
+email: "vatanparvar-mk@yandex.com",
+fax: "+998 (71) 234 - 85 - 21",
+inn: null,
+lat: "41.328935",
+long: "69.279986",
+mailIndex: "100017",
+openDaysRu: "Пятница 16: 00-18: 00",
+openDaysUz: "Juma soat 16:00-18:00",
+phoneNumber: "+998781503156",
+
+regionAdress: "Tashkent sh, Osiyo ko`chasi, 86a",
+regionAdressRu: "Ташкент г/, улица Осиё 86а",
+regionId: 14,
+regionName: '"Vatanparvar" tashkiloti markaziy kengashi',
+regionNameRu: "Центральный совет организации «Ватанпарвар»",
+regionPresident: "BATIROV XUSAN ARZUDINOVICH",
+regionPresidentRu: "БАТЫРОВ ХУСАН АРЗУДИНОВИЧ",
+
+webSite: "vatanparvar.uz",
+})
 const [showModalRegion, setShowModalRegion] = useState(false)
-const [regionG, setRegion] = useState({})
+const [region, setRegion] = useState({})
   const [center, setcenter] = useState([40.327178,64.192237]);
   
 
@@ -251,6 +272,8 @@ window.location.href=linkR.slice(0, linkR.lastIndexOf("/"))+"/"+a
               
             >
              
+             
+
              <Clusterer
               options={{
                 groupByCoordinates: true,
@@ -259,6 +282,28 @@ window.location.href=linkR.slice(0, linkR.lastIndexOf("/"))+"/"+a
               }}
              
             >
+ <Placemark
+                    onClick={()=>{var a=markaz;a.type='region';openModalRegion(a)}}
+                       key={100}
+                       className="placeMark"
+                       geometry={
+                           [Number(markaz.lat), Number(markaz.long)]
+                       }
+                      
+                       options={{
+                         preset:"islands#redDotIcon",
+                  
+   
+                         strokeColor: "#F008"
+                       }}
+                       properties={{
+                         iconContent:t("check")?markaz.regionName:markaz.regionNameRu,
+                         balloonContent: '<img src="http://img-fotki.yandex.ru/get/6114/82599242.2d6/0_88b97_ec425cf5_M" />',
+                       }}
+                       modules={["geoObject.addon.hint"]}
+                       
+                     />
+
               {data.length!==0 && data[0].length!==0?data[0].map((info, index) => {
                 
                   return (
@@ -271,13 +316,14 @@ window.location.href=linkR.slice(0, linkR.lastIndexOf("/"))+"/"+a
                        }
                       
                        options={{
-                         preset:info.regionId===region?"islands#redDotIcon":"islands#nightDotIcon",
+                         preset:"islands#nightDotIcon",
                   
    
                          strokeColor: "#F008"
                        }}
                        properties={{
-                         iconContent:t("check")?info.regionName:info.regionNameRu,
+                        hintContent: t("check")?info.regionName:info.regionNameRu,
+                        iconContent: t("check")?info.regionName:info.regionNameRu,
                          balloonContent: '<img src="http://img-fotki.yandex.ru/get/6114/82599242.2d6/0_88b97_ec425cf5_M" />',
                        }}
                        modules={["geoObject.addon.hint"]}
@@ -288,7 +334,36 @@ window.location.href=linkR.slice(0, linkR.lastIndexOf("/"))+"/"+a
                 
                 
               }):''}</Clusterer>
-
+<Clusterer
+              options={{
+                groupByCoordinates: true,
+                preset: "islands#invertedNightClusterIcons",
+              
+              }}
+             
+            >
+ <Placemark
+                    onClick={()=>{var a=markaz;a.type='region';openModalRegion(a)}}
+                       key={100}
+                       className="placeMark"
+                       geometry={
+                           [Number(markaz.lat), Number(markaz.long)]
+                       }
+                  
+                       options={{
+                         preset:"islands#redDotIcon",
+                  
+   
+                         strokeColor: "#F008"
+                       }}
+                       properties={{
+                         iconContent:t("check")?markaz.regionName:markaz.regionNameRu,
+                         hintContent: t("check")?markaz.regionName:markaz.regionNameRu,
+                         balloonContent: '<img src="http://img-fotki.yandex.ru/get/6114/82599242.2d6/0_88b97_ec425cf5_M" />',
+                       }}
+                       modules={["geoObject.addon.hint"]}
+                       
+                     /></Clusterer>
 
               
                       <Clusterer
@@ -316,7 +391,8 @@ window.location.href=linkR.slice(0, linkR.lastIndexOf("/"))+"/"+a
                                strokeColor: "#F008"
                              }}
                              properties={{
-                               
+                              hintContent: t("check")?info.branchName:info.branchNameRu,
+                              iconContent: t("check")?info.branchName:info.branchNameRu,
                                balloonContent: '<img src="http://img-fotki.yandex.ru/get/6114/82599242.2d6/0_88b97_ec425cf5_M" />',
                              }}
                              modules={["geoObject.addon.hint"]}
@@ -367,50 +443,50 @@ window.location.href=linkR.slice(0, linkR.lastIndexOf("/"))+"/"+a
                 {/* {
                     data.map((item, index) => */}
                         <div className="map-modal_content" >
-                            <h2 style={{fontSize:regionG.type==="school"?'24px':'32px'}} className="region_name">{t("check")?regionG.regionName!==null?regionG.regionName:regionG.regionNameRu:regionG.regionNameRu!==null?regionG.regionNameRu:regionG.regionName}</h2>
+                            <h2 style={{fontSize:region.type==="school"?'24px':'32px'}} className="region_name">{t("check")?region.regionName!==null?region.regionName:region.regionNameRu:region.regionNameRu!==null?region.regionNameRu:region.regionName}</h2>
                             <ul className="region_info">
                                 <li>
                                     <strong><FaBuilding className="icon" size="1.8rem" color="#133165" cursor="pointer"/></strong>
-                                    {t("check")?regionG.regionAdress!==null?regionG.regionAdress:regionG.regionAdressRu:regionG.regionAdressRu!==null?regionG.regionAdressRu:regionG.regionAdress}
+                                    {t("check")?region.regionAdress!==null?region.regionAdress:region.regionAdressRu:region.regionAdressRu!==null?region.regionAdressRu:region.regionAdress}
                                 </li>
                                 <li>
                                     <strong><FaUserTie className="icon" size="1.8rem" color="#133165" cursor="pointer"/></strong>
-                                    {t("check")?regionG.regionPresident!==null?regionG.regionPresident:regionG.regionPresidentRu:regionG.regionPresidentRu!==null?regionG.regionPresidentRu:regionG.regionPresident}
+                                    {t("check")?region.regionPresident!==null?region.regionPresident:region.regionPresidentRu:region.regionPresidentRu!==null?region.regionPresidentRu:region.regionPresident}
                                 </li>
                                 <li>
                                     <strong> <BsTelephoneFill className="icon" size="1.8rem" color="#133165" cursor="pointer"/></strong>
 
-                                    {regionG.phoneNumber!==null?regionG.phoneNumber:" - "}
+                                    {region.phoneNumber!==null?region.phoneNumber:" - "}
                                 </li>
-                                {regionG.type!=="school"?<li>
+                                {region.type!=="school"?<li>
 
 <strong> <ImPrinter className="icon" size="1.8rem" color="#133165" cursor="pointer"/></strong>
 
-{regionG.fax!==null?regionG.fax:" - "}
+{region.fax!==null?region.fax:" - "}
 
 </li>
 :''}
                                 <li>
                                 <strong> <MdAlternateEmail className="icon" size="1.8rem" color="#133165" cursor="pointer"/></strong>
 
-                                {regionG.email!=="null" && regionG.email!==null?regionG.email:" - "}
+                                {region.email!=="null" && region.email!==null?region.email:" - "}
 
                                 </li>
                                 <li>
                                 <strong> <HiMail className="icon" size="1.8rem" color="#133165" cursor="pointer"/></strong>
 
-                                {regionG.emailIndex!==null?regionG.emailIndex:" - "}
+                                {region.mailIndex!==null?region.mailIndex:" - "}
 
                                 </li>
-                                {regionG.type!=="school"?<li>
+                                {region.type!=="school"?<li>
                                 <strong> <MdLanguage className="icon" size="1.8rem" color="#133165" cursor="pointer"/></strong>
                                    
-                                    <a target="_blank" style={{color:"#133165"}} href={`https://${regionG.webSite}`}>{regionG.webSite}</a>
+                                    <a target="_blank" style={{color:"#133165"}} href={`https://${region.webSite}`}>{region.webSite}</a>
                                 </li>:''}
                                 <li>
                                 <strong> <HiOutlineLocationMarker className="icon" size="1.8rem" color="#133165" cursor="pointer"/></strong>
                                    
-                                    <a target="_blank" style={{color:"#133165"}} href={`https://yandex.uz/maps/?ll=${regionG.long}%2C${regionG.lat}8&mode=search&sll=${regionG.long}%2C${regionG.lat}&text=${regionG.lat}%2C${regionG.long}`}>{t('check')?"Xaritada ko'rish":'Посмотреть на карте'}</a>
+                                    <a target="_blank" style={{color:"#133165"}} href={`https://yandex.uz/maps/?ll=${region.long}%2C${region.lat}8&mode=search&sll=${region.long}%2C${region.lat}&text=${region.lat}%2C${region.long}`}>{t('check')?"Xaritada ko'rish":'Посмотреть на карте'}</a>
                                 </li>
                                 
                                 
@@ -431,6 +507,7 @@ window.location.href=linkR.slice(0, linkR.lastIndexOf("/"))+"/"+a
     <div className="menu">
       <li><img src="https://yastatic.net/s3/locdoc/freeze/maps/freeze/Jq-cChaOJpF6wxbhDLhWkAboFKk.png" alt="..."/>  - {t("Vatanparvar tashkilotining viloyat kengashlari")}</li>
       <li><img src="https://yastatic.net/s3/locdoc/freeze/maps/freeze/IxosgnNNo94f08dCpai1R3tLzsk.png" alt="..."/>  - {t("Vatanparvar tashkilotining o'quv sport-texnik kulublari")}</li>
+      <li><img src="https://yastatic.net/s3/locdoc/freeze/maps/freeze/ow25morZygypY1BcgQAsDE3vsgg.png" alt="..."/>  - {t("check")?markaz.regionName:markaz.regionNameRu}</li>
 
     </div>
 </div>
