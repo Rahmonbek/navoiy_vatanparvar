@@ -173,8 +173,8 @@ setzoomA(2)
     
       var g=[null, 1735, 1703, 1706, 1708, 1710, 1712, 1714, 1718, 1722, 1724, 1727, 1730, 1733, 1726]
       var h=[]
-      var regs=res.data.sort((a,b) => (a.regionName > b.regionName) ? 1 : ((b.regionName > a.regionName) ? -1 : 0))
-
+      var regs=res.data.sort((a,b) => (a.regionId > b.regionId) ? 1 : ((b.regionId > a.regionId) ? -1 : 0))
+    
       if(id===0){
         h.push(regs)
       
